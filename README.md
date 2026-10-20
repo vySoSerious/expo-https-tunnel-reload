@@ -28,7 +28,7 @@ xcrun simctl spawn booted log stream --level debug --predicate 'process == "expo
 
 ## Control
 
-Same tunnel, but give the port explicitly. Cloudflare also serves it on 8443:
+Stop Metro with Ctrl+C and leave cloudflared running. Restart Metro on the same tunnel, but give the port explicitly. Cloudflare also serves it on 8443:
 
 ```sh
 EXPO_PACKAGER_PROXY_URL=https://<id>.trycloudflare.com:8443 npx expo start --dev-client
